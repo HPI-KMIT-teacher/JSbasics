@@ -22,6 +22,8 @@ message = 233;
 // let age = 23;
 
 const birthday = '24.09.2000';
+// const myBirthday = '24.09.1984';
+const MY_BIRTHDAY = '24.09.1984';
 // birthday = 444; - викличе помилку
 
 
@@ -42,10 +44,37 @@ const birthday = '24.09.2000';
 // console.log(age)
 // console.log(message)
 
-let userName;
+/*
+let userName = 'Mark Tven';
+let UserName = 'Jhom Dou' // імʼя змінної чутливе до регистру: userName та UserName - різні змінні
 let test123;
 let $ = 1; // оголошено змінну з ім’ям "$"
 let _ = 2; // а тепер змінна з ім’ям "_"
+*/
 
 // let 123 - викликає помилку! Імʼя змінної не може починатися з цифри
+// let my-name 
+// let return - помилка - не можна використовувати зарезервовані ключові слова як імʼя змінної
 
+// console.table({
+//     userName: userName,
+//     UserName: UserName
+// })
+
+// Правила іменування
+let userName = "Іван"; // camelCase ✓
+let user_name = "Петро"; // snake_case (можливо, але не рекомендується)
+// let 1user = "Помилка"; // НЕ можна починати з цифри ✗
+// let user-name = "Помилка"; // НЕ можна використовувати дефіс
+
+let myValue = null;
+
+console.log(myValue)
+
+// Number - числа
+let temperature = 23;
+let price = 99.99;
+let negative = -15;
+console.log(temperature, price, negative);
+
+console.log('Тип змінної temperature: ', typeof temperature);
