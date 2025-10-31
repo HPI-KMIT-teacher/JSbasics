@@ -332,6 +332,7 @@ let message2 = age < 3 ? 'Привіт, малеча!' :
 // (company == 'Netscape') ?
 //    alert('Правильно!') : alert('Неправильно.');
 
+/*
 let value1 = "0";
 let value2 = "null";
 let value3 = 'Hello'
@@ -342,3 +343,119 @@ console.table({
   variableResult1: variableResult1,
   variableResult2: variableResult2
 })
+*/
+
+/*
+let firstName = "";
+let lastName = "";
+let nickName = "СуперКодер";
+
+alert( firstName || lastName || nickName || "Анонім"); // СуперКодер
+*/
+
+/*
+Пріоритет І && вище за АБО ||
+Оператор І && має вищий пріоритет за АБО ||.
+
+Отже, код 
+a && b || c && d 
+по суті є таким самим, як код з виразами && у дужках: 
+(a && b) || (c && d).
+*/
+
+// alert( null || 0 || undefined );
+
+// Цикли: while і for
+
+/*
+  while (умова) {
+    // код
+    // так зване "тіло циклу"
+  }
+*/
+
+// let i = 0;
+// while (i < 3) { // показується 0, далі 1, потім 2
+//   alert( i );
+//   i++;
+// }
+
+// let i = 3;
+// while (i) { // коли i буде 0, умова стане невірною, і цикл зупиниться
+//   alert( i );
+//   i--;
+// }
+
+// let i = 3;
+// while (i) alert(i--);
+
+// Цикл “do…while”
+
+// do {
+//   // тіло циклу
+// } while (умова);
+
+// do {
+//   alert('тіло циклу')
+// } while (0);
+
+// let i = 0;
+// do {
+//   console.log( i );
+//   i++;
+// } while (i < 3);
+
+// Цикл “for”
+
+// for (початок; умова; крок) {
+//   // ... тіло циклу ...
+// }
+
+/*
+let i = 0;
+
+for (i = 0; i < 3; i++) { // показується 0, далі 1, потім 2
+  console.log(i);
+}
+
+console.log(i);
+*/
+
+// for (let i = 0; i < 3; i++) alert(i)
+
+/*
+// Початок виконання
+let i = 0
+// Якщо умова == true → виконати тіло і виконати крок
+if (i < 3) { console.log(i); i++ }
+// Якщо умова == true → виконати тіло і виконати крок
+if (i < 3) { console.log(i); i++ }
+// Якщо умова == true → виконати тіло і виконати крок
+if (i < 3) { console.log(i); i++ }
+// ...кінець, тому що зараз i == 3
+*/
+
+// Переривання циклу: “break”
+
+// let sum = 0;
+
+// while (true) {
+
+//   let value = +prompt("Введіть число", '');
+
+//   if (!value) break; // (*)
+
+//   sum += value;
+
+// }
+// console.log( 'Сума: ' + sum );
+
+// Продовження з наступної ітерації
+
+for (let i = 0; i < 10; i++) {
+
+  // якщо умова справджується, тоді пропускаємо решту тіла циклу і починаємо з наступної ітерації
+  if (i % 2 !== 0) continue;
+
+  console.log(i); // 1, потім 3, 5, 7, 9
+}
