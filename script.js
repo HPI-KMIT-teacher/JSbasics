@@ -204,7 +204,7 @@ console.log(+ 'test')
 */
 
 // Оператори порівняння
-let age = 20;
+//let age = 20;
 
 /*
 console.log(age > 18); // true
@@ -230,17 +230,115 @@ let hasLaptop = true;
 let isOnline = false;
 
 // AND (&&) - обидві умови мають бути true
-console.log(isStudent && hasLaptop); // true
-console.log(isStudent && isOnline); // false
+// console.log(isStudent && hasLaptop); // true
+// console.log(isStudent && isOnline); // false
 
 // OR (||) - хоча б одна умова має бути true
-console.log(isStudent || isOnline); // true
-console.log(!isStudent || isOnline); // false
+// console.log(isStudent || isOnline); // true
+// console.log(!isStudent || isOnline); // false
 
 // NOT (!) - інвертує значення
-console.log(!isStudent); // false
-console.log(!isOnline); // true
+// console.log(!isStudent); // false
+// console.log(!isOnline); // true
 
 // Складні умови
-let canAttendClass = isStudent && (hasLaptop || isOnline);
-console.log("Може відвідати заняття:", canAttendClass); // true
+// let canAttendClass = isStudent && (hasLaptop || isOnline);
+// console.log("Може відвідати заняття:", canAttendClass); // true
+
+// Інструкція “if”
+
+/*
+if ( expression / variable ) {
+  // some logic
+} else if ( expression2 / variable2 ) {
+  // block of code
+} else {
+  // code block
+}
+*/
+
+// let year = prompt('В якому році була опублікована специфікація ECMAScript-2015?', '');
+// if (year == 2015) alert('Ви маєте рацію!');
+// console.log({
+//   year: year,
+//   typeOfYear: typeof year
+// })
+/*
+if (year == 2015) {
+  alert('Ви маєте рацію!');
+  alert('Ви молодець!');
+} else {
+  alert( 'Як ви можете так помилятися?' );
+}
+*/
+// наступні значення повертають false:
+// Число 0, порожній рядок "", null, undefined та NaN
+
+/*
+if (year < 2015) {
+  alert( 'Зарано...' );
+} else if (year > 2015) {
+  alert( 'Запізно' );
+} else {
+  alert( 'Саме так!' );
+}
+*/
+
+// Умовний (тернарний) оператор ‘?’
+
+/*
+let accessAllowed;
+let age = prompt('Скільки вам років?', '');
+
+if (age >= 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+
+alert(accessAllowed);
+*/
+
+// Синтаксис оператора "?"
+// let result = умова ? значення1 : значення2;
+// let age = prompt('Скільки вам років?', 18);
+// let accessAllowed = age >= 18 ? true : false;
+// let accessAllowed = age >= 18 ? 'Access granded' : 'Access denied'
+// alert(accessAllowed);
+
+/*
+let message2 = age < 3 ? 'Привіт, малеча!' :
+  age < 18 ? 'Вітаю!' :
+  age < 100 ? 'Моє шанування!' :
+  'Який незвичайний вік!';
+
+  alert( message2 );
+
+
+  let message;
+  if (age < 3) {
+    message = 'Привіт, крихітко!';
+  } else if (age < 18) {
+    message = 'Вітаю!';
+  } else if (age < 100) {
+    message = 'Моє шанування!';
+  } else {
+    message = 'Який незвичайний вік!';
+  }
+  */
+
+//   let company = prompt('Яка компанія створила JavaScript?', '');
+
+// (company == 'Netscape') ?
+//    alert('Правильно!') : alert('Неправильно.');
+
+let value1 = "0";
+let value2 = "null";
+let value3 = 'Hello'
+let value4 = 'World'
+let variableResult1 = value1 || value2 || value3 || value4;
+let variableResult2 = value1 && value2 && value3 && value4;
+console.table({
+  variableResult1: variableResult1,
+  variableResult2: variableResult2
+})
