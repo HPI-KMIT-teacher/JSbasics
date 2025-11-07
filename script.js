@@ -683,7 +683,7 @@ ask(
 // let alertMsg = () => alert('attention!')
 
 // alertMsg();
-
+/*
 let sum = (a, b) => {
   let a1 = a;
   let b1 = b;
@@ -694,3 +694,4 @@ let sum = (a, b) => {
 }
 
 console.log(sum(5, -5))
+*/
