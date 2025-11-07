@@ -173,8 +173,10 @@ console.log(Math.pow(3, 2))
 */
 
 // Арифметичні оператори
+/*
 let a = 10;
 let b = 3;
+*/
 
 /*
 console.log("Додавання:", a + b); // 13
@@ -451,7 +453,7 @@ if (i < 3) { console.log(i); i++ }
 // console.log( 'Сума: ' + sum );
 
 // Продовження з наступної ітерації
-
+/*
 for (let i = 0; i < 10; i++) {
 
   // якщо умова справджується, тоді пропускаємо решту тіла циклу і починаємо з наступної ітерації
@@ -459,3 +461,217 @@ for (let i = 0; i < 10; i++) {
 
   console.log(i); // 1, потім 3, 5, 7, 9
 }
+*/
+
+// Конструкція "switch"
+
+/* Синтаксис:
+switch(x) {
+  case 'value1':  // if (x === 'value1')
+    ...
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    ...
+    [break]
+
+  default:
+    ...
+    [break]
+}
+*/
+
+/*
+let abc = 3;
+
+switch (abc) {
+  case 3:
+  case 2:
+  case 1:
+    console.log('Замало');
+    break;
+  case 4:
+    console.log('То шо треба');
+    break;
+  case 5:
+    console.log('Забагато');
+    break;
+  default:
+    console.log('Невідоме значення');
+}
+*/
+
+// DRY - Do not Repeat Yourself
+
+/*
+let a = "1";
+let b = 0;
+
+switch (+a) {
+  case b + 1:
+    alert("виконано це, бо +a це 1, що строго дорівнює b + 1");
+    break;
+
+  default:
+    alert("це не буде виконано");
+}
+*/
+
+/*
+// Функції
+// f1 - Оголошення (декларація) функцій
+let msg;
+function showMessage(a) {
+  let msg = 'TEST message'
+  alert(msg);
+  msg = a;
+}
+
+// showMessage('Hello World!!!');
+showMessage('Hi again');
+console.log(msg)
+*/
+
+// function showMessage(from, text = 'missing text') { // параметри: from, text
+//   alert(from + ': ' + text);
+// }
+
+// showMessage('Анна', 'Привіт!'); // Анна: Привіт! (*)
+// showMessage('Анна', "Як справи?"); // Анна: Як справи? (**)
+// showMessage('Анна', 'Hi')
+
+/*
+function showMessage(from, text) { // параметри: from, text
+  if (!text) {
+    alert('Te value for "text" is miising');
+    return;
+  }
+  alert(from + ': ' + text);
+}
+
+showMessage('Hennadii', "Hi there!")
+*/
+
+/*
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('У вас є дозвіл ваших батьків?');
+  }
+}
+
+let age = prompt('Скільки вам років?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Доступ надано' );
+} else {
+  alert( 'У доступі відмовлено' );
+}
+*/
+
+// Повернення значення - return;
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let resultSum = sum(1, 2);
+// console.log(resultSum)
+// console.log(sum(2, 3))
+
+/*
+function sum(a, b) {
+  return ( 
+  '111' + 
+  '222' + 
+  '333' + 
+  a + b);
+}
+
+console.log(sum(2, 3))
+*/
+
+/*
+Наприклад, функції, які починаються з префіксу "show" зазвичай щось показують.
+Функції, які починаються з:
+"get…" – повертають значення,
+"calc…" – щось обчислюють,
+"create…" – щось створюють,
+"check…" – щось перевіряють і повертають булеве значення.
+*/
+
+// Функціональні вирази
+
+// function sayHi() {
+//   alert( "Привіт" );
+// }
+
+// let sayHiAsVar = function() {
+//   alert( "Привіт" );
+// }
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let calcSum = function(a, b) {
+//   return a + b;
+// }
+
+// let calcSum = sum;
+
+// console.log(calcSum);
+// console.log(calcSum(3, 5));
+
+
+// Колбеки (функції зворотного виклику)
+/*
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "Ви погодились." );
+}
+
+function showCancel() {
+  alert( "Ви скасували виконання." );
+}
+
+ask('Ви згодні?', showOk, showCancel);
+*/
+
+/*
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Ви згодні?",
+  function() { alert("Ви погодились."); },
+  function() { alert("Ви скасували виконання."); }
+);
+*/
+
+// Функція — це значення, що відображає “дію”
+
+
+
+// let sum = function(a, b) {
+//   return a + b;
+// }
+
+// console.log(sum(1,2))
+
+// Стрілкові функції, основи
+
+// let func = function(arg1, arg2, ..., argN) { return expression; };
+
+// let func = (arg1, arg2, ..., argN) => expression;
+
+let sum = (a, b) => a + b;
+
+console.log(sum)
