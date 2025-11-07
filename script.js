@@ -672,6 +672,25 @@ ask(
 
 // let func = (arg1, arg2, ..., argN) => expression;
 
-let sum = (a, b) => a + b;
+// let sum = (a, b) => a + b;
 
-console.log(sum)
+// console.log(sum)
+
+// let double = b => b * 2;
+
+// console.log(double(6))
+
+// let alertMsg = () => alert('attention!')
+
+// alertMsg();
+
+let sum = (a, b) => {
+  let a1 = a;
+  let b1 = b;
+  // console.log(a1, b1)
+  let result = a1 + b1;
+  if (!result) return;
+  return result;
+}
+
+console.log(sum(5, -5))
