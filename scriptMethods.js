@@ -224,7 +224,7 @@ function checkMyItem(a) {
   }
 }
 
-checkMyItem(result1)
+// checkMyItem(result1)
 
 
 
